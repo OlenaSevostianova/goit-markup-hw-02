@@ -1,4 +1,5 @@
 :root {
+  --main-text-color: #212121;
   --secodary-text-color: #757575;
   --btn-text-light: #ffffff;
   --accent-color: #2196f3;
@@ -6,14 +7,17 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  color: #212121;
-}
+  }
 
 .lists {
   list-style: none;
 }
-.links {
+.links,
+.contacts-email-footer,
+.contacts-namber-footer,
+.portfolio-link {
   text-decoration: none;
+  font-style: normal;
 }
 
 /* Header */
@@ -37,9 +41,13 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  color: var(--main-text-color);
 }
 .nav-list:hover,
 .nav-list:focus {
+  color: var(--accent-color);
+}
+.studio {
   color: var(--accent-color);
 }
 
@@ -119,6 +127,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: var(--main-text-color);
 }
 
 .advantages-description {
@@ -137,9 +146,14 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  color: var(--main-text-color);
 }
 
 /* Team */
+
+.team {
+  background-color: #f5f4fa;
+}
 
 .names {
   font-weight: 500;
@@ -147,6 +161,7 @@ body {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  color: var(--main-text-color);
 }
 
 .job {
@@ -172,8 +187,8 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-
   color: #ffffff;
+  font-style: normal;
 }
 
 .contacts-email-footer {
@@ -194,6 +209,10 @@ body {
 
 /* Portfolio */
 
+.portfolio {
+  color: var(--accent-color);
+}
+
 .filter {
   font-weight: 500;
   font-size: 16px;
@@ -201,6 +220,8 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
+  background-color: #f5f4fa;
+  color: var(--main-text-color);
 }
 
 .filter:hover,
@@ -214,6 +235,7 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  color: var(--main-text-color);
 }
 
 .project-description {
